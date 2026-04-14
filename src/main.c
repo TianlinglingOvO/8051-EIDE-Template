@@ -16,12 +16,14 @@
 
 void main(void)
 {
+    /*this is a test */
+    unsigned int LED = 0x01;
     while (1)
     {
-        /*this is a test */
-        P2_0 = 0;
-        Delay_ms(1000);
-        P2_0 = 1;
-        Delay_ms(500);
+        P2 = ~LED;
+        Delay_ms(250);
+
+        LED <<= 1;
+        if (LED == 0x00) LED = 0x01;
     }
 }
