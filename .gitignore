@@ -1,0 +1,27 @@
+# dot files
+/.vscode/launch.json
+/.settings
+/.eide/log
+/.eide.usr.ctx.json
+
+# project out
+/build
+/bin
+/obj
+/out
+
+# eide template
+*.ept
+*.eide-template
+
+# OS generated files (防止 Mac 或 Windows 自动生成的隐藏文件污染仓库)
+.DS_Store
+Thumbs.db
+
+# Keil C51 temp files (防御性配置，防止意外在外部使用 Keil 编译产生的垃圾)
+*.lst
+*.obj
+*.m51
+*.hex
+*.bin
+*.lnp
