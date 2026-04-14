@@ -18,10 +18,10 @@ void main(void)
 {
     while (1)
     {
+        /*this is a test */
         P2_0 = 0;
         Delay_ms(1000);
         P2_0 = 1;
         Delay_ms(500);
-        /*this is a test */
     }
 }
